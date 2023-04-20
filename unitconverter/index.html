@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h2>Unit Converter</h2>
+      
+
+                         <!-- length code -->
+
+      <div id="length" class="tab-content">
+        <h3>Length Converter</h3>
+        <form>
+          <input type="number" id="length-input" placeholder="Enter value" />
+          <select id="length-from">
+            <option value="m">Meter</option>
+            <option value="cm">Centimeter</option>
+            <option value="km">Kilometer</option>
+            <option value="in">Inch</option>
+          </select>
+          <span>to</span>
+          <select id="length-to">
+            <option value="m">Meter</option>
+            <option value="cm">Centimeter</option>
+            <option value="km">Kilometer</option>
+            <option value="in">Inch</option>
+          </select>
+          <input type="button" value="Convert" onclick="convertLength()" />
+        </form>
+        <div id="length-result" class="result"></div>
+      </div>
+
+                          <!-- Temperature converter -->
+
+      <div id="temperature" class="tab-content">
+        <h3>Temperature Converter</h3>
+        <form>
+          <input
+            type="number"
+            id="temperature-input"
+            placeholder="Enter value"
+          />
+          <select id="temperature-from">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+          </select>
+          <span>to</span>
+          <select id="temperature-to">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+          </select>
+          <input type="button" value="Convert" onclick="convertTemperature()" />
+        </form>
+        <div id="temperature-result" class="result"></div>
+      </div>
+
+                       <!-- Area converter -->
+
+      <div id="area" class="tab-content">
+        <h3>Area Converter</h3>
+        <form>
+          <input type="number" id="area-input" placeholder="Enter value" />
+          <select id="area-from">
+            <option value="m2">Square Meter</option>
+            <option value="cm2">Square Centimeter</option>
+            <option value="km2">Square Kilometer</option>
+            <option value="mi2">Square Mile</option>
+          </select>
+          <span>to</span>
+          <select id="area-to">
+            <option value="m2">Square Meter</option>
+            <option value="cm2">Square Centimeter</option>
+            <option value="km2">Square Kilometer</option>
+            <option value="mi2">Square Mile</option>
+          </select>
+          <input type="button" value="Convert" onclick="convertArea()" />
+        </form>
+        <div id="area-result" class="result"></div>
+      </div>
+
+
+            <!-- time converter -->
+
+      <div id="time" class="tab-content">
+        <h3>Time Converter</h3>
+        <form>
+          <input type="number" id="time-input" placeholder="Enter value" />
+          <select id="time-from">
+            <option value="sec">Second</option>
+            <option value="min">Minute</option>
+            <option value="hr">Hour</option>
+            <option value="day">Day</option>
+          </select>
+          <span>to</span>
+          <select id="time-to">
+            <option value="sec">Second</option>
+            <option value="min">Minute</option>
+            <option value="hr">Hour</option>
+            <option value="day">Day</option>
+          </select>
+          <input type="button" value="Convert" onclick="convertTime()" />
+        </form>
+        <div id="time-result" class="result"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
